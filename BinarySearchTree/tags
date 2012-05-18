@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+bst_node	bst.h	/^struct bst_node {$/;"	s
+comparator	bst.h	/^typedef int comparator(void* left, void* right);$/;"	t
+data	bst.h	/^    void* data;$/;"	m	struct:bst_node
+delete	bst.c	/^void delete(struct bst_node** node) {$/;"	f
+insert	bst.c	/^void insert(struct bst_node** root, comparator compare, void* data) {$/;"	f
+left	bst.h	/^    struct bst_node* left;$/;"	m	struct:bst_node	typeref:struct:bst_node::bst_node
+right	bst.h	/^    struct bst_node* right;$/;"	m	struct:bst_node	typeref:struct:bst_node::bst_node
+search	bst.c	/^struct bst_node** search(struct bst_node** root, comparator compare, void* data) {$/;"	f
